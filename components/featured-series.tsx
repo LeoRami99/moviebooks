@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Info, Play } from "lucide-react";
+import { Info, PaletteIcon, Play, PopcornIcon } from "lucide-react";
 
 export default function FeaturedSeries() {
 	return (
@@ -10,13 +10,14 @@ export default function FeaturedSeries() {
 			<Tabs defaultValue='documentary' className='w-full'>
 				<TabsList className='grid w-full grid-cols-3 mb-6 bg-gray-900'>
 					<TabsTrigger value='documentary' className='data-[state=active]:bg-fuchsia-700 data-[state=active]:text-white'>
-						Documental
+						<Play className='mr-2 h-5 w-5' /> Cine
 					</TabsTrigger>
 					<TabsTrigger value='animated' className='data-[state=active]:bg-fuchsia-700 data-[state=active]:text-white'>
-						Animado
+						<PopcornIcon className='mr-2 h-5 w-5' /> Animado
 					</TabsTrigger>
 					<TabsTrigger value='live-action' className='data-[state=active]:bg-fuchsia-700 data-[state=active]:text-white'>
-						Actores Reales
+						<PaletteIcon className='mr-2 h-5 w-5' />
+						Documental
 					</TabsTrigger>
 				</TabsList>
 				<TabsContent value='documentary' className='space-y-4'>
@@ -38,8 +39,8 @@ export default function FeaturedSeries() {
 								<Button className='bg-fuchsia-600 hover:bg-fuchsia-700 text-white'>
 									<Play className='mr-2 h-5 w-5' /> Reproducir
 								</Button>
-								<Button variant='outline' className='border-white text-white hover:bg-white/20'>
-									<Info className='mr-2 h-5 w-5' /> Detalles
+								<Button variant='outline' className='border-white text-black hover:bg-white/20'>
+									<Info className='mr-2 h-5 w-5 text-black' /> Detalles
 								</Button>
 							</div>
 						</div>
@@ -73,7 +74,7 @@ export default function FeaturedSeries() {
 								<Button className='bg-fuchsia-600 hover:bg-fuchsia-700 text-white'>
 									<Play className='mr-2 h-5 w-5' /> Reproducir
 								</Button>
-								<Button variant='outline' className='border-white text-white hover:bg-white/20'>
+								<Button variant='outline' className='border-white text-black hover:bg-white/20'>
 									<Info className='mr-2 h-5 w-5' /> Detalles
 								</Button>
 							</div>
@@ -109,7 +110,7 @@ export default function FeaturedSeries() {
 								<Button className='bg-fuchsia-600 hover:bg-fuchsia-700 text-white'>
 									<Play className='mr-2 h-5 w-5' /> Reproducir
 								</Button>
-								<Button variant='outline' className='border-white text-white hover:bg-white/20'>
+								<Button variant='outline' className='border-white text-black hover:bg-white/20'>
 									<Info className='mr-2 h-5 w-5 text-black' /> Detalles
 								</Button>
 							</div>
