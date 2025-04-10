@@ -133,7 +133,7 @@ export default function SeriesPage({ params }: { params: { id: string } }) {
 									<TabsContent value='documentary' className='space-y-4'>
 										<div className='relative rounded-lg overflow-hidden'>
 											<Image
-												src='/images/documentary.jpg'
+												src='https://cdn.pixabay.com/photo/2013/01/20/14/08/shooting-75599_1280.jpg'
 												alt='Documental'
 												width={600}
 												height={300}
@@ -153,7 +153,7 @@ export default function SeriesPage({ params }: { params: { id: string } }) {
 									<TabsContent value='animated' className='space-y-4'>
 										<div className='relative rounded-lg overflow-hidden'>
 											<Image
-												src='/images/animated.jpg'
+												src='https://cdn.pixabay.com/photo/2019/01/23/11/07/animation-3950055_1280.jpg'
 												alt='Animado'
 												width={600}
 												height={300}
@@ -173,7 +173,7 @@ export default function SeriesPage({ params }: { params: { id: string } }) {
 									<TabsContent value='live-action' className='space-y-4'>
 										<div className='relative rounded-lg overflow-hidden'>
 											<Image
-												src='/images/live-action.jpg'
+												src='https://cdn.pixabay.com/photo/2015/09/28/13/48/auto-962083_1280.jpg'
 												alt='Actores Reales'
 												width={600}
 												height={300}

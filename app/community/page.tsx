@@ -76,7 +76,7 @@ export default function CommunityPage() {
 						<Button className='bg-fuchsia-600 hover:bg-fuchsia-700 text-white'>
 							<Users className='mr-2 h-5 w-5' /> Unirse a la Comunidad
 						</Button>
-						<Button variant='outline' className='border-white text-white hover:bg-white/20'>
+						<Button variant='outline' className='border-white text-black hover:bg-white/20'>
 							<Calendar className='mr-2 h-5 w-5' /> Ver Eventos
 						</Button>
 					</div>
@@ -326,33 +326,47 @@ export default function CommunityPage() {
 						<h2 className='text-2xl font-bold mb-8 text-center'>Lo que dicen nuestros miembros</h2>
 
 						<div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
-							{[1, 2, 3].map((item) => (
-								<Card key={item} className='bg-gray-900/50 border-gray-800'>
+							{[
+								{
+									name: "María García",
+									image: "https://i.pravatar.cc/150?img=1",
+									since: "Miembro desde 2023",
+									testimonial:
+										"La comunidad de MovieBooks ha transformado mi experiencia de aprendizaje. Las discusiones después de ver las miniseries me ayudan a profundizar en los conceptos y aplicarlos en mi vida diaria.",
+								},
+								{
+									name: "Juan Pérez",
+									image: "https://i.pravatar.cc/150?img=3",
+									since: "Miembro desde 2024",
+									testimonial:
+										"Los clubes de lectura son increíbles. He conocido a personas con intereses similares y hemos formado un grupo que se reúne virtualmente cada semana para discutir nuevos conceptos.",
+								},
+								{
+									name: "Laura Sánchez",
+									image: "https://i.pravatar.cc/150?img=5",
+									since: "Miembro desde 2022",
+									testimonial:
+										"Los eventos con autores son mi parte favorita. Poder hacer preguntas directamente a los creadores del contenido que consumimos es una experiencia única que no encontrarías en otras plataformas.",
+								},
+							].map((testimonial, index) => (
+								<Card key={index} className='bg-gray-900/50 border-gray-800'>
 									<CardHeader>
 										<div className='flex items-center gap-3'>
 											<Image
-												src={`/images/avatar${(item % 2) + 1}.jpg`}
-												alt='Avatar'
+												src={testimonial.image}
+												alt={`Avatar de ${testimonial.name}`}
 												width={48}
 												height={48}
 												className='rounded-full'
 											/>
 											<div>
-												<h4 className='font-semibold text-white'>Usuario{item}</h4>
-												<p className='text-xs text-gray-300'>Miembro desde 2024</p>
+												<h4 className='font-semibold text-white'>{testimonial.name}</h4>
+												<p className='text-xs text-gray-300'>{testimonial.since}</p>
 											</div>
 										</div>
 									</CardHeader>
 									<CardContent>
-										<p className='text-gray-100 italic'>
-											{
-												[
-													"La comunidad de MovieBooks ha transformado mi experiencia de aprendizaje. Las discusiones después de ver las miniseries me ayudan a profundizar en los conceptos y aplicarlos en mi vida diaria.",
-													"Los clubes de lectura son increíbles. He conocido a personas con intereses similares y hemos formado un grupo que se reúne virtualmente cada semana para discutir nuevos conceptos.",
-													"Los eventos con autores son mi parte favorita. Poder hacer preguntas directamente a los creadores del contenido que consumimos es una experiencia única que no encontrarás en otras plataformas.",
-												][item - 1]
-											}
-										</p>
+										<p className='text-gray-100 italic'>{testimonial.testimonial}</p>
 									</CardContent>
 								</Card>
 							))}

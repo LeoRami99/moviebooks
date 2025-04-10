@@ -195,7 +195,7 @@ export default function Home() {
 						<div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
 							<div className='bg-gray-900 p-6 rounded-lg border border-gray-800'>
 								<div className='text-center mb-6'>
-									<h3 className='text-xl font-bold mb-2'>Básico</h3>
+									<h3 className='text-xl font-bold mb-2'>Lecto Basic</h3>
 									<p className='text-3xl font-bold'>Gratis</p>
 								</div>
 								<ul className='space-y-3 mb-6'>
@@ -219,9 +219,9 @@ export default function Home() {
 							<div className='bg-fuchsia-900 p-6 rounded-lg border border-fuchsia-700 transform scale-105 shadow-xl'>
 								<div className='text-center mb-6'>
 									<span className='bg-fuchsia-600 text-white px-2 py-0.5 text-sm rounded'>POPULAR</span>
-									<h3 className='text-xl font-bold mt-2 mb-2'>Premium</h3>
+									<h3 className='text-xl font-bold mt-2 mb-2'>Lectochill</h3>
 									<p className='text-3xl font-bold'>
-										$9.99<span className='text-sm font-normal'>/mes</span>
+										$29.9000<span className='text-sm font-normal'>/mes</span>
 									</p>
 								</div>
 								<ul className='space-y-3 mb-6'>
@@ -242,9 +242,9 @@ export default function Home() {
 							</div>
 							<div className='bg-gray-900 p-6 rounded-lg border border-gray-800'>
 								<div className='text-center mb-6'>
-									<h3 className='text-xl font-bold mb-2'>Familiar</h3>
+									<h3 className='text-xl font-bold mb-2'>Lectófilo</h3>
 									<p className='text-3xl font-bold'>
-										$14.99<span className='text-sm font-normal'>/mes</span>
+										$59.900<span className='text-sm font-normal'>/mes</span>
 									</p>
 								</div>
 								<ul className='space-y-3 mb-6'>
