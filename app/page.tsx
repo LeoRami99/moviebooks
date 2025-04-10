@@ -212,7 +212,7 @@ export default function Home() {
 										<span className='text-red-500 mr-2'>✗</span> Sin acceso a la comunidad
 									</li>
 								</ul>
-								<Button variant='outline' className='w-full text-white'>
+								<Button variant='outline' className='w-full text-black'>
 									Comenzar
 								</Button>
 							</div>
@@ -221,7 +221,7 @@ export default function Home() {
 									<span className='bg-fuchsia-600 text-white px-2 py-0.5 text-sm rounded'>POPULAR</span>
 									<h3 className='text-xl font-bold mt-2 mb-2'>Lectochill</h3>
 									<p className='text-3xl font-bold'>
-										$29.9000<span className='text-sm font-normal'>/mes</span>
+										$29.900<span className='text-sm font-normal'>/mes</span>
 									</p>
 								</div>
 								<ul className='space-y-3 mb-6'>
@@ -261,7 +261,7 @@ export default function Home() {
 										<span className='text-green-500 mr-2'>✓</span> Eventos exclusivos
 									</li>
 								</ul>
-								<Button variant='outline' className='w-full text-white'>
+								<Button variant='outline' className='w-full text-black'>
 									Suscribirse
 								</Button>
 							</div>
@@ -274,10 +274,6 @@ export default function Home() {
 					<div className='container'>
 						<div className='flex flex-col md:flex-row justify-between'>
 							<div className='mb-6 md:mb-0'>
-								<Link href='/' className='flex items-center gap-2 text-xl font-bold mb-4'>
-									<Sparkles className='h-5 w-5 text-fuchsia-500' />
-									<span>MovieBooks</span>
-								</Link>
 								<p className='text-gray-300 max-w-md'>Transformando libros impactantes en experiencias visuales inmersivas.</p>
 							</div>
 							<div className='grid grid-cols-2 md:grid-cols-3 gap-8'>

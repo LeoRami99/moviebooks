@@ -292,9 +292,78 @@ export default function SeriesPage({ params }: { params: { id: string } }) {
 			</div>
 
 			{/* Footer */}
-			<footer className='bg-gray-950 border-t border-gray-800 py-6'>
-				<div className='container text-center text-gray-300 text-sm'>
-					<p>© 2025 MovieBooks. Todos los derechos reservados.</p>
+			<footer className='bg-gray-950 border-t border-gray-800 py-10'>
+				<div className='container'>
+					<div className='flex flex-col md:flex-row justify-between'>
+						<div className='mb-6 md:mb-0'>
+							<p className='text-gray-300 max-w-md'>Transformando libros impactantes en experiencias visuales inmersivas.</p>
+						</div>
+						<div className='grid grid-cols-2 md:grid-cols-3 gap-8'>
+							<div>
+								<h3 className='text-sm font-semibold mb-3 text-gray-100'>Explorar</h3>
+								<ul className='space-y-2 text-gray-300'>
+									<li>
+										<Link href='/browse' className='hover:text-fuchsia-400'>
+											Biblioteca
+										</Link>
+									</li>
+									<li>
+										<Link href='/categories' className='hover:text-fuchsia-400'>
+											Categorías
+										</Link>
+									</li>
+									<li>
+										<Link href='/new' className='hover:text-fuchsia-400'>
+											Novedades
+										</Link>
+									</li>
+								</ul>
+							</div>
+							<div>
+								<h3 className='text-sm font-semibold mb-3 text-gray-100'>Comunidad</h3>
+								<ul className='space-y-2 text-gray-300'>
+									<li>
+										<Link href='/community' className='hover:text-fuchsia-400'>
+											Club de Autores
+										</Link>
+									</li>
+									<li>
+										<Link href='/events' className='hover:text-fuchsia-400'>
+											Eventos
+										</Link>
+									</li>
+									<li>
+										<Link href='/forum' className='hover:text-fuchsia-400'>
+											Foro
+										</Link>
+									</li>
+								</ul>
+							</div>
+							<div>
+								<h3 className='text-sm font-semibold mb-3 text-gray-100'>Soporte</h3>
+								<ul className='space-y-2 text-gray-300'>
+									<li>
+										<Link href='/help' className='hover:text-fuchsia-400'>
+											Ayuda
+										</Link>
+									</li>
+									<li>
+										<Link href='/contact' className='hover:text-fuchsia-400'>
+											Contacto
+										</Link>
+									</li>
+									<li>
+										<Link href='/faq' className='hover:text-fuchsia-400'>
+											FAQ
+										</Link>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div className='border-t border-gray-800 mt-8 pt-8 text-center text-gray-300 text-sm'>
+						<p>© 2025 MovieBooks. Todos los derechos reservados.</p>
+					</div>
 				</div>
 			</footer>
 		</div>

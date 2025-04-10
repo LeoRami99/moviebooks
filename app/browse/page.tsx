@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { ChevronLeft, ChevronRight, Search, Sparkles } from "lucide-react";
 
 export default function BrowsePage() {
-	// Categorías de ejemplo
+	// Categorías
 	const categories = [
 		"Desarrollo Personal",
 		"Innovación",
@@ -21,27 +21,95 @@ export default function BrowsePage() {
 		"Finanzas",
 	];
 
-	// Series de ejemplo
-	const series = Array.from({ length: 10 }, (_, i) => {
-		// Pixabay image URLs for books/content
-		const pixabayImages = [
-			"https://cdn.pixabay.com/photo/2015/11/19/21/10/glasses-1052010_1280.jpg",
-			"https://cdn.pixabay.com/photo/2015/07/27/20/16/book-863418_1280.jpg",
-			"https://cdn.pixabay.com/photo/2015/12/19/20/32/paper-1100254_1280.jpg",
-			"https://cdn.pixabay.com/photo/2016/09/10/17/18/book-1659717_1280.jpg",
-			"https://cdn.pixabay.com/photo/2015/09/05/21/51/reading-925589_1280.jpg",
-			"https://cdn.pixabay.com/photo/2015/09/05/07/28/writing-923882_1280.jpg",
-			"https://cdn.pixabay.com/photo/2016/03/26/22/21/books-1281581_1280.jpg",
-			"https://cdn.pixabay.com/photo/2018/01/17/18/43/book-3088775_1280.jpg",
-		];
+	// Libros agrupados por categoría
+	const booksData = {
+		desarrolloPersonal: [
+			{ id: 1, title: "Atomic Habits", author: "James Clear", formats: ["Documental", "Animado"] },
+			{ id: 2, title: "La Estrategia Emergente", author: "Alejandor Salazar", formats: ["Documental", "Cine", "Animado"] },
+			{ id: 3, title: "Mindset", author: "Carol Dweck", formats: ["Actores Reales", "Animado"] },
+			{ id: 4, title: "Deep Work", author: "Cal Newport", formats: ["Documental"] },
+			{ id: 5, title: "Grit", author: "Angela Duckworth", formats: ["Actores Reales"] },
+		],
+		innovacion: [
+			{ id: 6, title: "Zero to One", author: "Peter Thiel", formats: ["Documental"] },
+			{ id: 7, title: "The Innovator's Dilemma", author: "Clayton Christensen", formats: ["Animado"] },
+			{ id: 8, title: "Creativity, Inc.", author: "Ed Catmull", formats: ["Documental", "Actores Reales"] },
+			{ id: 9, title: "The Lean Startup", author: "Eric Ries", formats: ["Documental"] },
+			{ id: 10, title: "Where Good Ideas Come From", author: "Steven Johnson", formats: ["Animado"] },
+		],
+		negocios: [
+			{ id: 11, title: "Good to Great", author: "Jim Collins", formats: ["Documental"] },
+			{ id: 12, title: "Start with Why", author: "Simon Sinek", formats: ["Documental", "Animado"] },
+			{ id: 13, title: "Thinking, Fast and Slow", author: "Daniel Kahneman", formats: ["Actores Reales"] },
+			{ id: 14, title: "Built to Last", author: "Jim Collins", formats: ["Documental"] },
+			{ id: 15, title: "Principles", author: "Ray Dalio", formats: ["Animado", "Documental"] },
+		],
+		ciencia: [
+			{ id: 16, title: "Sapiens", author: "Yuval Noah Harari", formats: ["Animado", "Documental"] },
+			{ id: 17, title: "A Brief History of Time", author: "Stephen Hawking", formats: ["Animado"] },
+			{ id: 18, title: "The Gene", author: "Siddhartha Mukherjee", formats: ["Documental"] },
+			{ id: 19, title: "Cosmos", author: "Carl Sagan", formats: ["Documental", "Animado"] },
+			{ id: 20, title: "The Hidden Life of Trees", author: "Peter Wohlleben", formats: ["Documental"] },
+		],
+	};
+
+	// Mapeo de imágenes para cada libro específico
+	const bookImages: Record<string, string> = {
+		"Atomic Habits": "/atomic-habits.png",
+		"La Estrategia Emergente": "/la_estrategia_emergente.png",
+		Mindset: "/books/mindset.jpg",
+		"Deep Work": "/books/deep-work.jpg",
+		Grit: "/books/grit.jpg",
+		"Zero to One": "/books/zero-to-one.jpg",
+		"The Innovator's Dilemma": "/books/innovators-dilemma.jpg",
+		"Creativity, Inc.": "/books/creativity-inc.jpg",
+		"The Lean Startup": "/books/lean-startup.jpg",
+		"Where Good Ideas Come From": "/books/good-ideas.jpg",
+		"Good to Great": "/books/good-to-great.jpg",
+		"Start with Why": "/books/start-with-why.jpg",
+		"Thinking, Fast and Slow": "/books/thinking-fast-slow.jpg",
+		"Built to Last": "/books/built-to-last.jpg",
+		Principles: "/books/principles.jpg",
+		Sapiens: "/books/sapiens.jpg",
+		"A Brief History of Time": "/books/brief-history.jpg",
+		"The Gene": "/books/the-gene.jpg",
+		Cosmos: "/books/cosmos.jpg",
+		"The Hidden Life of Trees": "/books/hidden-life-trees.jpg",
+	};
+
+	// Imágenes de respaldo de Pixabay en caso de que no haya una imagen específica para el libro
+	const fallbackImages = [
+		"https://cdn.pixabay.com/photo/2015/11/19/21/10/glasses-1052010_1280.jpg",
+		"https://cdn.pixabay.com/photo/2015/07/27/20/16/book-863418_1280.jpg",
+		"https://cdn.pixabay.com/photo/2015/12/19/20/32/paper-1100254_1280.jpg",
+		"https://cdn.pixabay.com/photo/2016/09/10/17/18/book-1659717_1280.jpg",
+		"https://cdn.pixabay.com/photo/2015/09/05/21/51/reading-925589_1280.jpg",
+		"https://cdn.pixabay.com/photo/2015/09/05/07/28/writing-923882_1280.jpg",
+		"https://cdn.pixabay.com/photo/2016/03/26/22/21/books-1281581_1280.jpg",
+		"https://cdn.pixabay.com/photo/2018/01/17/18/43/book-3088775_1280.jpg",
+	];
+
+	// Crear un array plano con todos los libros
+	const allBooks = [...booksData.desarrolloPersonal, ...booksData.innovacion, ...booksData.negocios, ...booksData.ciencia].map((book) => {
+		// Asignar categoría a cada libro
+		let category;
+		if (booksData.desarrolloPersonal.find((b) => b.id === book.id)) {
+			category = "Desarrollo Personal";
+		} else if (booksData.innovacion.find((b) => b.id === book.id)) {
+			category = "Innovación";
+		} else if (booksData.negocios.find((b) => b.id === book.id)) {
+			category = "Negocios";
+		} else {
+			category = "Ciencia";
+		}
+
+		// Asignar imagen específica o de respaldo
+		const image = bookImages[book.title] || fallbackImages[book.id % fallbackImages.length];
 
 		return {
-			id: i + 1,
-			title: `Título de Serie ${i + 1}`,
-			author: `Autor ${i + 1}`,
-			category: categories[i % categories.length],
-			formats: ["Documental", "Animado", "Actores Reales"][i % 3],
-			image: pixabayImages[i % pixabayImages.length],
+			...book,
+			category,
+			image,
 		};
 	});
 
@@ -154,18 +222,20 @@ export default function BrowsePage() {
 
 					{/* Results */}
 					<div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6'>
-						{series.map((item) => (
-							<Link href={`/series/${item.id}`} key={item.id} className='group'>
+						{allBooks.map((book) => (
+							<Link href={`/series/${book.id}`} key={book.id} className='group'>
 								<div className='relative overflow-hidden rounded-lg transition-all duration-300 group-hover:scale-105'>
-									<Image src={item.image} alt={item.title} width={180} height={250} className='w-full object-cover aspect-[2/3]' />
+									<Image src={book.image} alt={book.title} width={180} height={250} className='w-full object-cover aspect-[2/3]' />
 									<div className='absolute inset-0 bg-gradient-to-t from-gray-950/90 via-gray-950/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-3'>
-										<h3 className='font-bold line-clamp-2 text-white'>{item.title}</h3>
-										<p className='text-sm text-gray-100'>{item.author}</p>
+										<h3 className='font-bold line-clamp-2 text-white'>{book.title}</h3>
+										<p className='text-sm text-gray-100'>{book.author}</p>
 										<div className='flex flex-wrap gap-1 mt-2'>
-											<Badge variant='outline' className='text-xs border-fuchsia-500 text-fuchsia-300'>
-												{item.formats}
-											</Badge>
-											<Badge className='text-xs bg-fuchsia-600 text-white'>{item.category}</Badge>
+											{book.formats.map((format, idx) => (
+												<Badge key={idx} variant='outline' className='text-xs border-fuchsia-500 text-fuchsia-300'>
+													{format}
+												</Badge>
+											))}
+											<Badge className='text-xs bg-fuchsia-600 text-white'>{book.category}</Badge>
 										</div>
 									</div>
 								</div>
@@ -178,13 +248,13 @@ export default function BrowsePage() {
 						<Button variant='outline' size='icon' className='border-gray-700 hover:bg-gray-800 text-white'>
 							<ChevronLeft className='h-4 w-4' />
 						</Button>
-						{[1, 2, 3, 4, 5].map((page) => (
+						{[1, 2, 3].map((page) => (
 							<Button
 								key={page}
 								variant={page === 1 ? "default" : "outline"}
 								size='icon'
 								className={
-									page === 1 ? "bg-fuchsia-600 hover:bg-fuchsia-700 text-white" : "border-gray-700 hover:bg-gray-800 text-white"
+									page === 1 ? "bg-fuchsia-600 hover:bg-fuchsia-700 text-white" : "border-gray-700 hover:bg-gray-800 text-black"
 								}>
 								{page}
 							</Button>
