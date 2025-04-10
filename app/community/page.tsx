@@ -10,50 +10,63 @@ export default function CommunityPage() {
 	return (
 		<div className='min-h-screen bg-gray-950 text-white'>
 			{/* Navigation */}
-			<header className='fixed top-0 w-full z-50 bg-gray-950'>
-				<div className='container flex items-center justify-between py-4'>
-					<div className='flex items-center gap-8'>
-						<Link href='/' className='flex items-center gap-2 text-2xl font-bold'>
-							<Sparkles className='h-6 w-6 text-fuchsia-500' />
-							<span>MovieBooks</span>
-						</Link>
-						<nav className='hidden md:flex items-center gap-6'>
-							<Link href='/browse' className='hover:text-fuchsia-400 transition'>
-								Explorar
+			<div className='flex justify-center w-full'>
+				<header className='fixed top-0 w-full z-50 bg-gradient-to-b from-gray-950/90 to-transparent'>
+					<div className='container mx-auto flex items-center justify-between py-4 px-4 md:px-8'>
+						<div className='flex items-center gap-8'>
+							<Link href='/' className='flex items-center gap-2 text-2xl font-bold'>
+								<Image src={"moviebook.png"} alt='Logo' width={40} height={40} className='size-[80px]' />
+								{/* <span>MovieBooks</span> */}
 							</Link>
-							<Link href='/categories' className='hover:text-fuchsia-400 transition'>
-								Categorías
+							<nav className='hidden md:flex items-center gap-6'>
+								<Link href='/browse' className='hover:text-fuchsia-400 transition'>
+									Explorar
+								</Link>
+								<Link href='/categories' className='hover:text-fuchsia-400 transition'>
+									Categorías
+								</Link>
+								<Link href='/community' className='hover:text-fuchsia-400 transition'>
+									Comunidad
+								</Link>
+								<Link href='/my-list' className='hover:text-fuchsia-400 transition'>
+									Mi Lista
+								</Link>
+							</nav>
+						</div>
+						<div className='flex items-center gap-4'>
+							<Link href='/search' className='hover:text-fuchsia-400 transition'>
+								Buscar
 							</Link>
-							<Link href='/community' className='text-fuchsia-400 transition'>
-								Comunidad
+							<Link href='/plans' className='hover:text-fuchsia-400 transition'>
+								Planes
 							</Link>
-							<Link href='/my-list' className='hover:text-fuchsia-400 transition'>
-								Mi Lista
-							</Link>
-						</nav>
+							<Button asChild size='sm' variant='ghost' className='rounded-full'>
+								<Link href='/profile'>
+									<div className='flex items-center justify-center h-8 w-8 bg-gradient-to-br from-fuchsia-400 to-fuchsia-600 rounded-full'>
+										<svg
+											xmlns='http://www.w3.org/2000/svg'
+											width='16'
+											height='16'
+											viewBox='0 0 24 24'
+											fill='none'
+											stroke='currentColor'
+											strokeWidth='2'
+											strokeLinecap='round'
+											strokeLinejoin='round'
+											className='text-white'>
+											<path d='M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2'></path>
+											<circle cx='12' cy='7' r='4'></circle>
+										</svg>
+									</div>
+								</Link>
+							</Button>
+						</div>
 					</div>
-					<div className='flex items-center gap-4'>
-						<Link href='/search' className='hover:text-fuchsia-400 transition'>
-							Buscar
-						</Link>
-						<Link href='/plans' className='hover:text-fuchsia-400 transition'>
-							Planes
-						</Link>
-						<Link href='/profile'>
-							<Image
-								src='/images/profile.jpg'
-								alt='Profile'
-								width={32}
-								height={32}
-								className='rounded-full border-2 border-fuchsia-500'
-							/>
-						</Link>
-					</div>
-				</div>
-			</header>
+				</header>
+			</div>
 			{/* Hero Section */}
 			<section className='relative pt-24 pb-16 bg-gradient-to-b from-fuchsia-900/50 to-gray-950'>
-				<div className='container text-center'>
+				<div className='container mx-auto text-center flex flex-col items-center justify-center'>
 					<h1 className='text-4xl md:text-5xl font-bold mb-4'>Club de Autores</h1>
 					<p className='text-xl text-gray-100 max-w-2xl mx-auto mb-8'>
 						Únete a nuestra comunidad y conecta con personas que comparten tus intereses en desarrollo personal, innovación, negocios y
