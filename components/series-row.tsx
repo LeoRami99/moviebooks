@@ -14,7 +14,7 @@ export default function SeriesRow({ category }: SeriesRowProps) {
 		"personal-development": [
 			{ id: 1, title: "Atomic Habits", author: "James Clear", format: ["Documental", "Animado"] },
 			{ id: 2, title: "La Estrategia Emergente", author: "Alejandor Salazar", format: ["Documental", "Cine", "Animado"] },
-			{ id: 3, title: "Mindset", author: "Carol Dweck", format: ["Actores Reales", "Animado"] },
+			{ id: 3, title: "El Dilema", author: "Clayton M.", format: ["Película", "Animado", "Documental"] },
 			{ id: 4, title: "Deep Work", author: "Cal Newport", format: ["Documental"] },
 			{ id: 5, title: "Grit", author: "Angela Duckworth", format: ["Actores Reales"] },
 		],
@@ -45,7 +45,7 @@ export default function SeriesRow({ category }: SeriesRowProps) {
 	const bookImages: Record<string, string> = {
 		"Atomic Habits": "/atomic-habits.png",
 		"La Estrategia Emergente": "/la_estrategia_emergente.png",
-		Mindset: "https://images.squarespace-cdn.com/content/v1/6186200c6b828336568b8269/1670281246315-NOT69MTFUD2W6EKQDBTB/06.jpg",
+		"El Dilema": "eldilema.png",
 		"Deep Work": "https://cdn.kobo.com/book-images/ab39cb3a-7057-41e7-89a7-0d7901bdd7fe/1200/1200/False/deep-work-2.jpg",
 		Grit: "https://images.cdn1.buscalibre.com/fit-in/360x360/7c/e0/7ce050ce42f5222e07dae63d06ac833c.jpg",
 		"Zero to One": "https://image.cdn1.buscalibre.com/5b5833b84463b5073d8b4569.RS500x500.jpg",
