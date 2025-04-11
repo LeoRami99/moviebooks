@@ -271,10 +271,6 @@ export default function BrowsePage() {
 				<div className='container'>
 					<div className='flex flex-col md:flex-row justify-between'>
 						<div className='mb-6 md:mb-0'>
-							<Link href='/' className='flex items-center gap-2 text-xl font-bold mb-4'>
-								<Sparkles className='h-5 w-5 text-fuchsia-500' />
-								<span>MovieBooks</span>
-							</Link>
 							<p className='text-gray-300 max-w-md'>Transformando libros impactantes en experiencias visuales inmersivas.</p>
 						</div>
 						<div className='grid grid-cols-2 md:grid-cols-3 gap-8'>
