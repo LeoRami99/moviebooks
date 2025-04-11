@@ -75,7 +75,7 @@ export default function PlansPage() {
 						<div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
 							<div className='bg-gray-900 p-6 rounded-lg border border-gray-800'>
 								<div className='text-center mb-6'>
-									<h3 className='text-xl font-bold mb-2'>Lecto Basic</h3>
+									<h3 className='text-xl font-bold mb-2'>Lectobasic</h3>
 									<p className='text-3xl font-bold'>Gratis</p>
 								</div>
 								<ul className='space-y-3 mb-6'>
@@ -114,9 +114,6 @@ export default function PlansPage() {
 									<li className='flex items-center'>
 										<span className='text-green-400 mr-2'>✓</span> Sin publicidad
 									</li>
-									<li className='flex items-center'>
-										<span className='text-green-400 mr-2'>✓</span> Acceso a la comunidad
-									</li>
 								</ul>
 								<Button className='w-full bg-fuchsia-600 hover:bg-fuchsia-700 text-white'>Suscribirse</Button>
 							</div>
@@ -139,6 +136,9 @@ export default function PlansPage() {
 									</li>
 									<li className='flex items-center'>
 										<span className='text-green-500 mr-2'>✓</span> Eventos exclusivos
+									</li>
+									<li className='flex items-center'>
+										<span className='text-green-400 mr-2'>✓</span> Acceso a la comunidad
 									</li>
 								</ul>
 								<Button variant='outline' className='w-full text-black'>
