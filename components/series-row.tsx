@@ -13,7 +13,7 @@ export default function SeriesRow({ category }: SeriesRowProps) {
 	const seriesData = {
 		"personal-development": [
 			{ id: 1, title: "Atomic Habits", author: "James Clear", format: ["Documental", "Animado"] },
-			{ id: 2, title: "La Estrategia Emergente", author: "Alejandor Salazar", format: ["Documental", "Cine", "Animado"] },
+			{ id: 2, title: "La Estrategia Emergente", author: "Alejandor Salazar", format: ["Documental", "Película", "Animado"] },
 			{ id: 3, title: "El Dilema", author: "Clayton M.", format: ["Película", "Animado", "Documental"] },
 			{ id: 4, title: "Deep Work", author: "Cal Newport", format: ["Documental"] },
 			{ id: 5, title: "The Power", author: "Angela Duckworth", format: ["Animado"] },
@@ -21,14 +21,14 @@ export default function SeriesRow({ category }: SeriesRowProps) {
 		innovation: [
 			{ id: 6, title: "Zero to One", author: "Peter Thiel", format: ["Documental"] },
 			{ id: 7, title: "The Innovator's Dilemma", author: "Clayton Christensen", format: ["Animado"] },
-			{ id: 8, title: "Creativity, Inc.", author: "Ed Catmull", format: ["Documental", "Actores Reales"] },
+			{ id: 8, title: "Creativity, Inc.", author: "Ed Catmull", format: ["Documental", "Película"] },
 			{ id: 9, title: "The Lean Startup", author: "Eric Ries", format: ["Documental"] },
 			{ id: 10, title: "Where Good Ideas Come From", author: "Steven Johnson", format: ["Animado"] },
 		],
 		business: [
 			{ id: 11, title: "Good to Great", author: "Jim Collins", format: ["Documental"] },
 			{ id: 12, title: "Start with Why", author: "Simon Sinek", format: ["Documental", "Animado"] },
-			{ id: 13, title: "Thinking, Fast and Slow", author: "Daniel Kahneman", format: ["Actores Reales"] },
+			{ id: 13, title: "Thinking, Fast and Slow", author: "Daniel Kahneman", format: ["Película"] },
 			{ id: 14, title: "Built to Last", author: "Jim Collins", format: ["Documental"] },
 			{ id: 15, title: "Principles", author: "Ray Dalio", format: ["Animado", "Documental"] },
 		],
