@@ -137,13 +137,22 @@ export default function CommunityPage() {
 											<CardHeader>
 												<div className='flex justify-between items-start'>
 													<div className='flex items-center gap-3'>
-														<Image
-															src={`/images/avatar${(item % 2) + 1}.jpg`}
-															alt='Avatar'
-															width={40}
-															height={40}
-															className='rounded-full'
-														/>
+														<div className='flex items-center justify-center h-10 w-10 bg-gradient-to-br from-fuchsia-400 to-fuchsia-600 rounded-full'>
+															<svg
+																xmlns='http://www.w3.org/2000/svg'
+																width='20'
+																height='20'
+																viewBox='0 0 24 24'
+																fill='none'
+																stroke='currentColor'
+																strokeWidth='2'
+																strokeLinecap='round'
+																strokeLinejoin='round'
+																className='text-white'>
+																<path d='M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2'></path>
+																<circle cx='12' cy='7' r='4'></circle>
+															</svg>
+														</div>
 														<div>
 															<h4 className='font-semibold'>Usuario{item}</h4>
 															<p className='text-xs text-gray-300'>Hace 3 días</p>
