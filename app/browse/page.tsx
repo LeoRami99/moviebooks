@@ -28,7 +28,7 @@ export default function BrowsePage() {
 			{ id: 2, title: "La Estrategia Emergente", author: "Alejandor Salazar", formats: ["Documental", "Cine", "Animado"] },
 			{ id: 3, title: "El Dilema", author: "Clayton M.", formats: ["Película", "Animado", "Documental"] },
 			{ id: 4, title: "Deep Work", author: "Cal Newport", formats: ["Documental"] },
-			{ id: 5, title: "The Power", author: "Angela Duckworth", formats: ["Actores Reales"] },
+			{ id: 5, title: "The Power", author: "Angela Duckworth", formats: ["Animado"] },
 		],
 		innovacion: [
 			{ id: 6, title: "Zero to One", author: "Peter Thiel", formats: ["Documental"] },
