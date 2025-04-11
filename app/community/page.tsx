@@ -154,7 +154,7 @@ export default function CommunityPage() {
 															</svg>
 														</div>
 														<div>
-															<h4 className='font-semibold'>
+															<h4 className='font-semibold text-white'>
 																{
 																	[
 																		"MariaLectora",
@@ -259,7 +259,7 @@ export default function CommunityPage() {
 								</div>
 
 								<div className='text-center mt-8'>
-									<Button variant='outline' className='border-gray-700 hover:bg-gray-800 text-white'>
+									<Button variant='outline' className='border-gray-700 hover:bg-gray-800 text-black'>
 										Ver todos los eventos
 									</Button>
 								</div>
@@ -330,7 +330,7 @@ export default function CommunityPage() {
 								</div>
 
 								<div className='text-center mt-8'>
-									<Button variant='outline' className='border-gray-700 hover:bg-gray-800 text-white'>
+									<Button variant='outline' className='border-gray-700 hover:bg-gray-800 text-black'>
 										Ver todos los clubes
 									</Button>
 								</div>

@@ -85,8 +85,8 @@ export default function PlansPage() {
 									<li className='flex items-center'>
 										<span className='text-green-500 mr-2'>✓</span> Formato estándar
 									</li>
-									<li className='flex items-center'>
-										<span className='text-green-500 mr-2'>✓</span> Con publicidad
+									<li className='flex items-center text-gray-400'>
+										<span className='text-red-500 mr-2'>✗</span> Con publicidad
 									</li>
 									<li className='flex items-center text-gray-400'>
 										<span className='text-red-500 mr-2'>✗</span> Sin acceso a la comunidad
@@ -142,6 +142,9 @@ export default function PlansPage() {
 									</li>
 									<li className='flex items-center'>
 										<span className='text-green-400 mr-2'>✓</span> Acceso a la comunidad
+									</li>
+									<li className='flex items-center'>
+										<span className='text-green-400 mr-2'>✓</span> Todo lo de Lectochill
 									</li>
 								</ul>
 								<Button variant='outline' className='w-full text-black'>
