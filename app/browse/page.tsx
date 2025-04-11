@@ -25,8 +25,8 @@ export default function BrowsePage() {
 	const booksData = {
 		desarrolloPersonal: [
 			{ id: 1, title: "Atomic Habits", author: "James Clear", formats: ["Documental", "Animado"] },
-			{ id: 2, title: "La Estrategia Emergente", author: "Alejandor Salazar", formats: ["Negocios"] },
-			{ id: 3, title: "El Dilema", author: "Clayton M.", formats: ["Innovación"] },
+			{ id: 2, title: "La Estrategia Emergente", author: "Alejandor Salazar", formats: ["Documental", "Película", "Animado"] },
+			{ id: 3, title: "El Dilema", author: "Clayton M.", formats: ["Cine", "Animado", "Documental"] },
 			{ id: 4, title: "Deep Work", author: "Cal Newport", formats: ["Documental"] },
 			{ id: 5, title: "The Power", author: "Angela Duckworth", formats: ["Animado"] },
 		],
