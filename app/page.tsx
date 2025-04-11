@@ -252,9 +252,7 @@ export default function Home() {
 										<li className='flex items-center'>
 											<span className='text-green-500 mr-2'>✓</span> Todo lo de Premium
 										</li>
-										<li className='flex items-center'>
-											<span className='text-green-500 mr-2'>✓</span> Hasta 5 perfiles
-										</li>
+
 										<li className='flex items-center'>
 											<span className='text-green-500 mr-2'>✓</span> Descargas para ver sin conexión
 										</li>
