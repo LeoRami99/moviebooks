@@ -154,7 +154,17 @@ export default function CommunityPage() {
 															</svg>
 														</div>
 														<div>
-															<h4 className='font-semibold'>Usuario{item}</h4>
+															<h4 className='font-semibold'>
+																{
+																	[
+																		"MariaLectora",
+																		"PabloInnovación",
+																		"LecturaIntensa",
+																		"MenteCientífica",
+																		"FilosofiaPractica",
+																	][item % 5]
+																}
+															</h4>
 															<p className='text-xs text-gray-300'>Hace 3 días</p>
 														</div>
 													</div>
