@@ -249,11 +249,9 @@ export default function Home() {
 								</div>
 								<ul className='space-y-3 mb-6'>
 									<li className='flex items-center'>
-										<span className='text-green-500 mr-2'>✓</span> Todo lo de Premium
+										<span className='text-green-500 mr-2'>✓</span> Todo lo de Lectochill
 									</li>
-									<li className='flex items-center'>
-										<span className='text-green-500 mr-2'>✓</span> Hasta 5 perfiles
-									</li>
+
 									<li className='flex items-center'>
 										<span className='text-green-500 mr-2'>✓</span> Descargas para ver sin conexión
 									</li>
@@ -262,9 +260,6 @@ export default function Home() {
 									</li>
 									<li className='flex items-center'>
 										<span className='text-green-400 mr-2'>✓</span> Acceso a la comunidad
-									</li>
-									<li className='flex items-center'>
-										<span className='text-green-400 mr-2'>✓</span> Todo lo de Lectochill
 									</li>
 								</ul>
 								<Button variant='outline' className='w-full text-black'>
