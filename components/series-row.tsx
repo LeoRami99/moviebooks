@@ -16,7 +16,7 @@ export default function SeriesRow({ category }: SeriesRowProps) {
 			{ id: 2, title: "La Estrategia Emergente", author: "Alejandor Salazar", format: ["Documental", "Cine", "Animado"] },
 			{ id: 3, title: "El Dilema", author: "Clayton M.", format: ["Película", "Animado", "Documental"] },
 			{ id: 4, title: "Deep Work", author: "Cal Newport", format: ["Documental"] },
-			{ id: 5, title: "Grit", author: "Angela Duckworth", format: ["Actores Reales"] },
+			{ id: 5, title: "The Power", author: "Angela Duckworth", format: ["Animado"] },
 		],
 		innovation: [
 			{ id: 6, title: "Zero to One", author: "Peter Thiel", format: ["Documental"] },
@@ -45,9 +45,9 @@ export default function SeriesRow({ category }: SeriesRowProps) {
 	const bookImages: Record<string, string> = {
 		"Atomic Habits": "/atomic-habits.png",
 		"La Estrategia Emergente": "/la_estrategia_emergente.png",
-		"El Dilema": "eldilema.png",
-		"Deep Work": "https://cdn.kobo.com/book-images/ab39cb3a-7057-41e7-89a7-0d7901bdd7fe/1200/1200/False/deep-work-2.jpg",
-		Grit: "https://images.cdn1.buscalibre.com/fit-in/360x360/7c/e0/7ce050ce42f5222e07dae63d06ac833c.jpg",
+		"El Dilema": "/eldilema.png",
+		"Deep Work": "/deep_work.png",
+		"The Power": "/thepower.png",
 		"Zero to One": "https://image.cdn1.buscalibre.com/5b5833b84463b5073d8b4569.RS500x500.jpg",
 		"The Innovator's Dilemma": "https://images.cdn1.buscalibre.com/fit-in/360x360/81/16/8116a4ef1c472468e0a386649662831b.jpg",
 		"Creativity, Inc.": "https://images.cdn3.buscalibre.com/fit-in/360x360/04/05/04056ceb07b3fbaa4c1d15d18584ca57.jpg",
