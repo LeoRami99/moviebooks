@@ -235,6 +235,9 @@ export default function Home() {
 										<li className='flex items-center'>
 											<span className='text-green-400 mr-2'>✓</span> Sin publicidad
 										</li>
+										<li className='flex items-center text-gray-400'>
+											<span className='text-red-500 mr-2'>✗</span> Sin acceso a la comunidad
+										</li>
 									</ul>
 									<Button className='w-full bg-fuchsia-600 hover:bg-fuchsia-700 text-white'>Suscribirse</Button>
 								</div>
