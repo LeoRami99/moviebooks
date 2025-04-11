@@ -223,7 +223,7 @@ export default function SeriesPage({ params }: { params: { id: string } }) {
 								<Link href={`/series/${item}`} key={item} className='group'>
 									<div className='relative overflow-hidden rounded-lg transition-all duration-300 group-hover:scale-105'>
 										<Image
-											src='/images/atomic-habits.jpg'
+											src='/atomic-habits.png'
 											alt='Libro relacionado'
 											width={180}
 											height={250}
@@ -254,13 +254,21 @@ export default function SeriesPage({ params }: { params: { id: string } }) {
 							{[1, 2, 3].map((item) => (
 								<div key={item} className='bg-gray-900 p-4 rounded-lg'>
 									<div className='flex items-center gap-3 mb-3'>
-										<Image
-											src={`/images/avatar${(item % 2) + 1}.jpg`}
-											alt='Avatar'
-											width={40}
-											height={40}
-											className='rounded-full'
-										/>
+										<div className='bg-gray-700 rounded-full w-10 h-10 flex items-center justify-center text-gray-200'>
+											<svg
+												xmlns='http://www.w3.org/2000/svg'
+												width='24'
+												height='24'
+												viewBox='0 0 24 24'
+												fill='none'
+												stroke='currentColor'
+												strokeWidth='2'
+												strokeLinecap='round'
+												strokeLinejoin='round'>
+												<path d='M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2'></path>
+												<circle cx='12' cy='7' r='4'></circle>
+											</svg>
+										</div>
 										<div>
 											<h4 className='font-semibold'>Usuario{item}</h4>
 											<p className='text-xs text-gray-300'>Hace 2 días</p>
