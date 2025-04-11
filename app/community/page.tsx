@@ -179,7 +179,7 @@ export default function CommunityPage() {
 								</div>
 
 								<div className='text-center mt-8'>
-									<Button variant='outline' className='border-gray-700 hover:bg-gray-800 text-white'>
+									<Button variant='outline' className='border-gray-700 hover:bg-gray-800 text-black'>
 										Cargar más discusiones
 									</Button>
 								</div>
@@ -385,7 +385,7 @@ export default function CommunityPage() {
 							<Button size='lg' className='bg-fuchsia-600 hover:bg-fuchsia-700 text-white'>
 								Unirse Ahora
 							</Button>
-							<Button size='lg' variant='outline' className='border-white text-white hover:bg-white/20'>
+							<Button size='lg' variant='outline' className='border-white text-black hover:bg-white/20'>
 								Explorar Más
 							</Button>
 						</div>

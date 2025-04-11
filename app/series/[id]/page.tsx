@@ -64,7 +64,7 @@ export default function SeriesPage({ params }: { params: { id: string } }) {
 						<div className='flex flex-col md:flex-row gap-8'>
 							<div className='md:w-1/3 lg:w-1/4'>
 								<Image
-									src='https://images.squarespace-cdn.com/content/v1/5a4b6d1f9f07f5d01c10f2b6/e9b992f6-72bf-4cb8-8be5-19bde83e566a/352707224_10159200474907341_8781875447665972430_n.jpg'
+									src='/atomic-habits.png'
 									alt={series.title}
 									width={300}
 									height={450}
